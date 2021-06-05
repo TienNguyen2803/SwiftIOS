@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2AD94E82669D389000FD632 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD94E72669D389000FD632 /* WalletViewController.swift */; };
+		F2AD94ED2669D3A2000FD632 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD94EC2669D3A2000FD632 /* NotificationViewController.swift */; };
+		F2AD94F22669D3B6000FD632 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD94F12669D3B6000FD632 /* HomeViewController.swift */; };
+		F2AD94F72669D3CE000FD632 /* PromotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD94F62669D3CE000FD632 /* PromotionViewController.swift */; };
 		F2AE759626691E7100D387AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE759526691E7100D387AD /* AppDelegate.swift */; };
 		F2AE759826691E7100D387AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE759726691E7100D387AD /* SceneDelegate.swift */; };
 		F2AE759A26691E7100D387AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE759926691E7100D387AD /* ViewController.swift */; };
@@ -16,6 +20,13 @@
 		F2AE75A526691E7400D387AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AE75A326691E7400D387AD /* LaunchScreen.storyboard */; };
 		F2AE75B026691E7400D387AD /* SKGTNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE75AF26691E7400D387AD /* SKGTNTests.swift */; };
 		F2AE75BB26691E7400D387AD /* SKGTNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE75BA26691E7400D387AD /* SKGTNUITests.swift */; };
+		F2AE75D62669213300D387AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE75D52669213300D387AD /* User.swift */; };
+		F2AE75DE266921A000D387AD /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AE75DD266921A000D387AD /* Auth.swift */; };
+		F2FE0766266A339C007C970E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE0765266A339C007C970E /* LoginViewController.swift */; };
+		F2FE076F266A5956007C970E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE076E266A5956007C970E /* RegisterViewController.swift */; };
+		F2FE0778266A9489007C970E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE0777266A9489007C970E /* ForgotPasswordViewController.swift */; };
+		F2FE077E266B258C007C970E /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE077D266B258C007C970E /* OTPViewController.swift */; };
+		F2FE0784266B3403007C970E /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE0783266B3403007C970E /* ResetPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F2AD94E72669D389000FD632 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		F2AD94EC2669D3A2000FD632 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		F2AD94F12669D3B6000FD632 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F2AD94F62669D3CE000FD632 /* PromotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionViewController.swift; sourceTree = "<group>"; };
 		F2AE759226691E7100D387AD /* SKGTN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKGTN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AE759526691E7100D387AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2AE759726691E7100D387AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +66,13 @@
 		F2AE75B626691E7400D387AD /* SKGTNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKGTNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AE75BA26691E7400D387AD /* SKGTNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGTNUITests.swift; sourceTree = "<group>"; };
 		F2AE75BC26691E7400D387AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2AE75D52669213300D387AD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F2AE75DD266921A000D387AD /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		F2FE0765266A339C007C970E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F2FE076E266A5956007C970E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F2FE0777266A9489007C970E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		F2FE077D266B258C007C970E /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		F2FE0783266B3403007C970E /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +100,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2AD94D82669D311000FD632 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				F2AD94E72669D389000FD632 /* WalletViewController.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		F2AD94D92669D32A000FD632 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				F2AD94EC2669D3A2000FD632 /* NotificationViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		F2AD94DA2669D336000FD632 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F2AD94F12669D3B6000FD632 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F2AD94DB2669D342000FD632 /* Promotion */ = {
+			isa = PBXGroup;
+			children = (
+				F2AD94F62669D3CE000FD632 /* PromotionViewController.swift */,
+			);
+			path = Promotion;
+			sourceTree = "<group>";
+		};
 		F2AE758926691E7100D387AD = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +155,10 @@
 		F2AE759426691E7100D387AD /* SKGTN */ = {
 			isa = PBXGroup;
 			children = (
-				F2AE759526691E7100D387AD /* AppDelegate.swift */,
+				F2AE75CD266920A500D387AD /* Assets */,
+				F2AE75CC2669209200D387AD /* Application */,
+				F2AE75CB2669206200D387AD /* Models */,
 				F2AE759726691E7100D387AD /* SceneDelegate.swift */,
-				F2AE759926691E7100D387AD /* ViewController.swift */,
 				F2AE759B26691E7100D387AD /* Main.storyboard */,
 				F2AE75A126691E7400D387AD /* Assets.xcassets */,
 				F2AE75A326691E7400D387AD /* LaunchScreen.storyboard */,
@@ -129,6 +184,128 @@
 				F2AE75BC26691E7400D387AD /* Info.plist */,
 			);
 			path = SKGTNUITests;
+			sourceTree = "<group>";
+		};
+		F2AE75CB2669206200D387AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2AE75D52669213300D387AD /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2AE75CC2669209200D387AD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F2FE0782266B33EB007C970E /* ResetPassword */,
+				F2FE077C266B2558007C970E /* OTP */,
+				F2FE0773266A9457007C970E /* ForgotPassword */,
+				F2FE076A266A5750007C970E /* Register */,
+				F2AD94DB2669D342000FD632 /* Promotion */,
+				F2AD94DA2669D336000FD632 /* Home */,
+				F2AD94D92669D32A000FD632 /* Notification */,
+				F2AD94D82669D311000FD632 /* Wallet */,
+				F2AE75D42669211300D387AD /* Extentions */,
+				F2AE75D32669210900D387AD /* Common */,
+				F2AE75D2266920E600D387AD /* Login */,
+				F2AE75D1266920E000D387AD /* Main */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F2AE75CD266920A500D387AD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F2AE75D0266920C800D387AD /* Videos */,
+				F2AE75CF266920C100D387AD /* Sounds */,
+				F2AE75CE266920B800D387AD /* Images */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F2AE75CE266920B800D387AD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F2AE75CF266920C100D387AD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		F2AE75D0266920C800D387AD /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		F2AE75D1266920E000D387AD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F2AE759926691E7100D387AD /* ViewController.swift */,
+				F2AE759526691E7100D387AD /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F2AE75D2266920E600D387AD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F2AE75DD266921A000D387AD /* Auth.swift */,
+				F2FE0765266A339C007C970E /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F2AE75D32669210900D387AD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F2AE75D42669211300D387AD /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		F2FE076A266A5750007C970E /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F2FE076E266A5956007C970E /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		F2FE0773266A9457007C970E /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				F2FE0777266A9489007C970E /* ForgotPasswordViewController.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		F2FE077C266B2558007C970E /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				F2FE077D266B258C007C970E /* OTPViewController.swift */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		F2FE0782266B33EB007C970E /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				F2FE0783266B3403007C970E /* ResetPasswordViewController.swift */,
+			);
+			path = ResetPassword;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +441,18 @@
 				F2AE759A26691E7100D387AD /* ViewController.swift in Sources */,
 				F2AE75A026691E7100D387AD /* SKGTN.xcdatamodeld in Sources */,
 				F2AE759626691E7100D387AD /* AppDelegate.swift in Sources */,
+				F2FE076F266A5956007C970E /* RegisterViewController.swift in Sources */,
+				F2AE75D62669213300D387AD /* User.swift in Sources */,
+				F2AD94F22669D3B6000FD632 /* HomeViewController.swift in Sources */,
+				F2AD94ED2669D3A2000FD632 /* NotificationViewController.swift in Sources */,
+				F2AD94E82669D389000FD632 /* WalletViewController.swift in Sources */,
 				F2AE759826691E7100D387AD /* SceneDelegate.swift in Sources */,
+				F2AD94F72669D3CE000FD632 /* PromotionViewController.swift in Sources */,
+				F2FE0778266A9489007C970E /* ForgotPasswordViewController.swift in Sources */,
+				F2AE75DE266921A000D387AD /* Auth.swift in Sources */,
+				F2FE0784266B3403007C970E /* ResetPasswordViewController.swift in Sources */,
+				F2FE077E266B258C007C970E /* OTPViewController.swift in Sources */,
+				F2FE0766266A339C007C970E /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
