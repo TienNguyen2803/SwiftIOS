@@ -12,8 +12,7 @@ class NotificationViewController: UIViewController {
     @IBOutlet weak var tarbarItem: UITabBarItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        tarbarItem.selectedImage = UIImage(named: "icon_notification")?.withRenderingMode(.alwaysOriginal)
-        tarbarItem.image = UIImage(named: "icon_notification")
+      
         // Do any additional setup after loading the view.
     }
     

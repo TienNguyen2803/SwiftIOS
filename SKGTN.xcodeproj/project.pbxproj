@@ -27,6 +27,12 @@
 		F2FE0778266A9489007C970E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE0777266A9489007C970E /* ForgotPasswordViewController.swift */; };
 		F2FE077E266B258C007C970E /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE077D266B258C007C970E /* OTPViewController.swift */; };
 		F2FE0784266B3403007C970E /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE0783266B3403007C970E /* ResetPasswordViewController.swift */; };
+		F2FE078D266BAC68007C970E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE078C266BAC68007C970E /* SettingViewController.swift */; };
+		F2FE079A266CE5F6007C970E /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE0799266CE5F6007C970E /* SettingsTableViewCell.swift */; };
+		F2FE07A5266CED7D007C970E /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07A4266CED7D007C970E /* Setting.swift */; };
+		F2FE07B6266CFB1E007C970E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07B5266CFB1E007C970E /* ProfileViewController.swift */; };
+		F2FE07BC266D0609007C970E /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07BB266D0609007C970E /* ChangePasswordViewController.swift */; };
+		F2FE07C1266D2116007C970E /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07C0266D2116007C970E /* ProfileTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +79,12 @@
 		F2FE0777266A9489007C970E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		F2FE077D266B258C007C970E /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		F2FE0783266B3403007C970E /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		F2FE078C266BAC68007C970E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		F2FE0799266CE5F6007C970E /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		F2FE07A4266CED7D007C970E /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		F2FE07B5266CFB1E007C970E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F2FE07BB266D0609007C970E /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		F2FE07C0266D2116007C970E /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +209,9 @@
 		F2AE75CC2669209200D387AD /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				F2FE07BA266D05E8007C970E /* ChangePassword */,
+				F2FE07A9266CFAD2007C970E /* Profile */,
+				F2FE0788266BAC3E007C970E /* Setting */,
 				F2FE0782266B33EB007C970E /* ResetPassword */,
 				F2FE077C266B2558007C970E /* OTP */,
 				F2FE0773266A9457007C970E /* ForgotPassword */,
@@ -306,6 +321,33 @@
 				F2FE0783266B3403007C970E /* ResetPasswordViewController.swift */,
 			);
 			path = ResetPassword;
+			sourceTree = "<group>";
+		};
+		F2FE0788266BAC3E007C970E /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				F2FE078C266BAC68007C970E /* SettingViewController.swift */,
+				F2FE0799266CE5F6007C970E /* SettingsTableViewCell.swift */,
+				F2FE07A4266CED7D007C970E /* Setting.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		F2FE07A9266CFAD2007C970E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F2FE07B5266CFB1E007C970E /* ProfileViewController.swift */,
+				F2FE07C0266D2116007C970E /* ProfileTableViewCell.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F2FE07BA266D05E8007C970E /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				F2FE07BB266D0609007C970E /* ChangePasswordViewController.swift */,
+			);
+			path = ChangePassword;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,14 +482,20 @@
 			files = (
 				F2AE759A26691E7100D387AD /* ViewController.swift in Sources */,
 				F2AE75A026691E7100D387AD /* SKGTN.xcdatamodeld in Sources */,
+				F2FE079A266CE5F6007C970E /* SettingsTableViewCell.swift in Sources */,
 				F2AE759626691E7100D387AD /* AppDelegate.swift in Sources */,
+				F2FE078D266BAC68007C970E /* SettingViewController.swift in Sources */,
 				F2FE076F266A5956007C970E /* RegisterViewController.swift in Sources */,
 				F2AE75D62669213300D387AD /* User.swift in Sources */,
 				F2AD94F22669D3B6000FD632 /* HomeViewController.swift in Sources */,
+				F2FE07A5266CED7D007C970E /* Setting.swift in Sources */,
+				F2FE07B6266CFB1E007C970E /* ProfileViewController.swift in Sources */,
 				F2AD94ED2669D3A2000FD632 /* NotificationViewController.swift in Sources */,
 				F2AD94E82669D389000FD632 /* WalletViewController.swift in Sources */,
 				F2AE759826691E7100D387AD /* SceneDelegate.swift in Sources */,
+				F2FE07BC266D0609007C970E /* ChangePasswordViewController.swift in Sources */,
 				F2AD94F72669D3CE000FD632 /* PromotionViewController.swift in Sources */,
+				F2FE07C1266D2116007C970E /* ProfileTableViewCell.swift in Sources */,
 				F2FE0778266A9489007C970E /* ForgotPasswordViewController.swift in Sources */,
 				F2AE75DE266921A000D387AD /* Auth.swift in Sources */,
 				F2FE0784266B3403007C970E /* ResetPasswordViewController.swift in Sources */,

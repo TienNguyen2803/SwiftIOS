@@ -1,31 +1,29 @@
 //
-//  ResetPasswordViewController.swift
+//  ChangePasswordViewController.swift
 //  SKGTN
 //
-//  Created by Minh Tien on 6/5/21.
+//  Created by Minh Tien on 6/6/21.
 //
 
 import UIKit
 
-class ResetPasswordViewController: UIViewController {
-    var tabViewControllers: [UIViewController]!
-    @IBOutlet weak var btn_submit: UIButton!
-    @IBOutlet weak var img_logo: UIImageView!
+class ChangePasswordViewController: UIViewController {
+
+    @IBOutlet weak var imgLogo: UIImageView!
+    @IBOutlet weak var btnSubmit: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        img_logo.image = UIImage(named: "logo_otp")
-        btn_submit.layer.backgroundColor = UIColor(red: 0.91, green: 0.443, blue: 0.338, alpha: 1).cgColor
-        btn_submit.layer.cornerRadius = 25
+        btnSubmit.layer.backgroundColor = UIColor(red: 0.91, green: 0.448, blue: 0.338, alpha: 1).cgColor
+        imgLogo.image = UIImage(named: "logo_otp")
+        btnSubmit.layer.cornerRadius = 24
         // Do any additional setup after loading the view.
     }
     
+
     @IBAction func handleSubmit(_ sender: Any) {
-        self.tabBarController?.selectedIndex = 1
-       
-        
+    
         self.navigationController?.popToRootViewController(animated: true)
     }
-    
     /*
     // MARK: - Navigation
 

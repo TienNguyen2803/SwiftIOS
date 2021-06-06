@@ -12,8 +12,7 @@ class WalletViewController: UIViewController {
     @IBOutlet weak var tarbarItem: UITabBarItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        tarbarItem.selectedImage = UIImage(named: "icon_saving")?.withRenderingMode(.alwaysOriginal)
-        
+       
         // Do any additional setup after loading the view.
     }
 

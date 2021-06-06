@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Frame (1).png",
+      "filename" : "122171999_394447275049644_7082596350164624946_n.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -17,8 +17,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "template-rendering-intent" : "original"
   }
 }
