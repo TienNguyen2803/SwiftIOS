@@ -33,6 +33,7 @@
 		F2FE07B6266CFB1E007C970E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07B5266CFB1E007C970E /* ProfileViewController.swift */; };
 		F2FE07BC266D0609007C970E /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07BB266D0609007C970E /* ChangePasswordViewController.swift */; };
 		F2FE07C1266D2116007C970E /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07C0266D2116007C970E /* ProfileTableViewCell.swift */; };
+		F2FE07C6266D3A04007C970E /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07C5266D3A04007C970E /* UpdateProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		F2FE07B5266CFB1E007C970E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F2FE07BB266D0609007C970E /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		F2FE07C0266D2116007C970E /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		F2FE07C5266D3A04007C970E /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,6 +340,7 @@
 			children = (
 				F2FE07B5266CFB1E007C970E /* ProfileViewController.swift */,
 				F2FE07C0266D2116007C970E /* ProfileTableViewCell.swift */,
+				F2FE07C5266D3A04007C970E /* UpdateProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				F2AE759A26691E7100D387AD /* ViewController.swift in Sources */,
 				F2AE75A026691E7100D387AD /* SKGTN.xcdatamodeld in Sources */,
 				F2FE079A266CE5F6007C970E /* SettingsTableViewCell.swift in Sources */,
+				F2FE07C6266D3A04007C970E /* UpdateProfileViewController.swift in Sources */,
 				F2AE759626691E7100D387AD /* AppDelegate.swift in Sources */,
 				F2FE078D266BAC68007C970E /* SettingViewController.swift in Sources */,
 				F2FE076F266A5956007C970E /* RegisterViewController.swift in Sources */,
