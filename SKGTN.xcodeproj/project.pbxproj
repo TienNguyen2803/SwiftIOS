@@ -34,6 +34,11 @@
 		F2FE07BC266D0609007C970E /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07BB266D0609007C970E /* ChangePasswordViewController.swift */; };
 		F2FE07C1266D2116007C970E /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07C0266D2116007C970E /* ProfileTableViewCell.swift */; };
 		F2FE07C6266D3A04007C970E /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07C5266D3A04007C970E /* UpdateProfileViewController.swift */; };
+		F2FE07CB266E0688007C970E /* UpdateAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07CA266E0688007C970E /* UpdateAddressViewController.swift */; };
+		F2FE07D0266E0FDE007C970E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07CF266E0FDE007C970E /* SearchViewController.swift */; };
+		F2FE07D5266E5722007C970E /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07D4266E5721007C970E /* District.swift */; };
+		F2FE07DA266E575A007C970E /* Ward.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07D9266E575A007C970E /* Ward.swift */; };
+		F2FE07DF266E5784007C970E /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FE07DE266E5784007C970E /* Street.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +92,11 @@
 		F2FE07BB266D0609007C970E /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		F2FE07C0266D2116007C970E /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		F2FE07C5266D3A04007C970E /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
+		F2FE07CA266E0688007C970E /* UpdateAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAddressViewController.swift; sourceTree = "<group>"; };
+		F2FE07CF266E0FDE007C970E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F2FE07D4266E5721007C970E /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		F2FE07D9266E575A007C970E /* Ward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ward.swift; sourceTree = "<group>"; };
+		F2FE07DE266E5784007C970E /* Street.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +351,11 @@
 				F2FE07B5266CFB1E007C970E /* ProfileViewController.swift */,
 				F2FE07C0266D2116007C970E /* ProfileTableViewCell.swift */,
 				F2FE07C5266D3A04007C970E /* UpdateProfileViewController.swift */,
+				F2FE07CA266E0688007C970E /* UpdateAddressViewController.swift */,
+				F2FE07CF266E0FDE007C970E /* SearchViewController.swift */,
+				F2FE07D4266E5721007C970E /* District.swift */,
+				F2FE07D9266E575A007C970E /* Ward.swift */,
+				F2FE07DE266E5784007C970E /* Street.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -484,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2AE759A26691E7100D387AD /* ViewController.swift in Sources */,
+				F2FE07DA266E575A007C970E /* Ward.swift in Sources */,
 				F2AE75A026691E7100D387AD /* SKGTN.xcdatamodeld in Sources */,
 				F2FE079A266CE5F6007C970E /* SettingsTableViewCell.swift in Sources */,
 				F2FE07C6266D3A04007C970E /* UpdateProfileViewController.swift in Sources */,
@@ -491,6 +507,7 @@
 				F2FE078D266BAC68007C970E /* SettingViewController.swift in Sources */,
 				F2FE076F266A5956007C970E /* RegisterViewController.swift in Sources */,
 				F2AE75D62669213300D387AD /* User.swift in Sources */,
+				F2FE07CB266E0688007C970E /* UpdateAddressViewController.swift in Sources */,
 				F2AD94F22669D3B6000FD632 /* HomeViewController.swift in Sources */,
 				F2FE07A5266CED7D007C970E /* Setting.swift in Sources */,
 				F2FE07B6266CFB1E007C970E /* ProfileViewController.swift in Sources */,
@@ -499,9 +516,12 @@
 				F2AE759826691E7100D387AD /* SceneDelegate.swift in Sources */,
 				F2FE07BC266D0609007C970E /* ChangePasswordViewController.swift in Sources */,
 				F2AD94F72669D3CE000FD632 /* PromotionViewController.swift in Sources */,
+				F2FE07DF266E5784007C970E /* Street.swift in Sources */,
 				F2FE07C1266D2116007C970E /* ProfileTableViewCell.swift in Sources */,
+				F2FE07D0266E0FDE007C970E /* SearchViewController.swift in Sources */,
 				F2FE0778266A9489007C970E /* ForgotPasswordViewController.swift in Sources */,
 				F2AE75DE266921A000D387AD /* Auth.swift in Sources */,
+				F2FE07D5266E5722007C970E /* District.swift in Sources */,
 				F2FE0784266B3403007C970E /* ResetPasswordViewController.swift in Sources */,
 				F2FE077E266B258C007C970E /* OTPViewController.swift in Sources */,
 				F2FE0766266A339C007C970E /* LoginViewController.swift in Sources */,
