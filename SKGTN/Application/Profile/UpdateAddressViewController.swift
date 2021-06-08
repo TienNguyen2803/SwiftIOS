@@ -1,23 +1,33 @@
 import UIKit
 
 class UpdateAddressViewController: UIViewController {
+    
+    //create array district , ward , street
     var list_district = [
         District(name: "Ho Chi Minh"),
         District(name: "Da Nang"),
         District(name: "Ha Noi")
     ]
     var list_ward = [
-        Ward(name: "Quận Bình Tân"),
-        Ward(name: "Quận Tân Bình"),
-        Ward(name: "Quận 1"),
-        Ward(name: "Quận 2"),
-        Ward(name: "Quận 3")
+        Ward(name: "Quan Binh Tan"),
+        Ward(name: "Quan Tan Binh"),
+        Ward(name: "Quan 1"),
+        Ward(name: "Quan 2"),
+        Ward(name: "Quan 3"),
+        Ward(name: "Quan 4"),
+        Ward(name: "Quan 5"),
+        Ward(name: "Quan 6"),
+        Ward(name: "Quan 7"),
+        Ward(name: "Quan 8"),
+        Ward(name: "Quan 9")
     ]
     var list_street = [
-        Street(name: "Phường Bình Trị Đông A"),
-        Street(name: "Phường Bình Hưng Hoà"),
-        Street(name: "Phường Tân Tạo"),
+        Street(name: "Phuong Binh Tri A"),
+        Street(name: "Phuong Binh Hung Hoa A"),
+        Street(name: "Phuong Binh Hung Hoa B"),
+        Street(name: "Phuong Tan Tao"),
     ]
+    //varial request to  display
     var titleUpdatePre: String!
     
     var labelCrurrentPre: String!
@@ -28,11 +38,21 @@ class UpdateAddressViewController: UIViewController {
     
     var control : String!
     
-    var district : String!
-    var ward : String!
-    var street : String!
-    var detail : String!
+    //varial view  show
     
+    @IBOutlet weak var district: UILabel!
+    
+    @IBOutlet weak var ward: UILabel!
+    
+    @IBOutlet weak var street: UILabel!
+    
+    //varial request to display
+    var districtPre : String!
+    var wardPre : String!
+    var streetPre: String!
+    
+    
+    //varial view show
     @IBOutlet weak var titleUpdate: UILabel!
     
     @IBOutlet weak var labelCrurrent: UILabel!
@@ -82,6 +102,29 @@ class UpdateAddressViewController: UIViewController {
         textFieldInput.layer.borderWidth = 2
         textFieldInput.layer.borderColor = UIColor.black.cgColor
         textFieldInput.layer.cornerRadius = 5
+        
+        //remove key store district , ward , street
+        UserDefaults.standard.removeObject(forKey:"district")
+        UserDefaults.standard.removeObject(forKey:"ward")
+        UserDefaults.standard.removeObject(forKey:"street")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let districtRes = UserDefaults.standard.string(forKey: "district") ?? ""
+        let wardRes  = UserDefaults.standard.string(forKey: "ward") ?? ""
+        let streetRes  = UserDefaults.standard.string(forKey: "street") ?? ""
+       
+        if districtRes != "" {
+            district.text  = districtRes
+        }
+        
+        if wardRes != "" {
+            ward.text  = wardRes
+        }
+        
+        if streetRes != "" {
+            street.text  = streetRes
+        }
     }
     
     //Action
@@ -89,7 +132,7 @@ class UpdateAddressViewController: UIViewController {
     
     @IBAction func selectDistrict(_ sender: Any) {
         let modal = UIStoryboard(name: "Main", bundle: nil) .instantiateViewController(withIdentifier: "SEARCH") as! SearchViewController
-        modal.modalPresentationStyle = .overCurrentContext
+        modal.modalPresentationStyle = .fullScreen
         modal.titlePre = "Chọn Tỉnh / Thành Phố"
         modal.listDistrict = list_district
         modal.control = "district"
@@ -99,7 +142,7 @@ class UpdateAddressViewController: UIViewController {
    
     @IBAction func selectWard(_ sender: Any) {
         let modal = UIStoryboard(name: "Main", bundle: nil) .instantiateViewController(withIdentifier: "SEARCH") as! SearchViewController
-        modal.modalPresentationStyle = .overCurrentContext
+        modal.modalPresentationStyle = .fullScreen
         modal.titlePre = "Chọn Quận / Huyện"
         modal.listWard = list_ward
         modal.control = "ward"
@@ -113,7 +156,7 @@ class UpdateAddressViewController: UIViewController {
         modal.titlePre = "Chọn Phuờng / Xã"
         modal.listStreet = list_street
         modal.control = "street"
-        modal.modalPresentationStyle = .overCurrentContext
+        modal.modalPresentationStyle = .fullScreen
        
        present(modal, animated: true, completion: nil)
     }
@@ -121,9 +164,11 @@ class UpdateAddressViewController: UIViewController {
     @IBAction func handleSubmit(_ sender: Any) {
         let profile = navigationController?.viewControllers[1]
             as! ProfileViewController
-        
-//        profile.user.address = detail + " "  + street + " " + ward + " "  + district
-        
+        //create varial address
+        let streetAndWard = textFieldInput.text! +  " " + street.text!
+        let districtAndCity = " "  + ward.text! + " " + district.text!
+        profile.user.address = streetAndWard + districtAndCity
+       
         self.navigationController?.popToViewController(profile,animated: true)
     }
 }

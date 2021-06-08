@@ -20,7 +20,7 @@ class SearchViewController: UIViewController , UITableViewDataSource, UISearchBa
     var filterWard : [Ward] = []
     var filterStreet : [Street] = []
     
-    
+   
     @IBOutlet weak var tableSearchView: UITableView!
     
      
@@ -91,22 +91,32 @@ class SearchViewController: UIViewController , UITableViewDataSource, UISearchBa
        
          
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let updateScreen = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UPDATEADDRESS") as! UpdateAddressViewController
         
+      
+               
         switch control {
             case "ward":
-                updateScreen.ward  =  listWard[indexPath.row].name
+                UserDefaults.standard.set( listWard[indexPath.row].name , forKey: "ward")
             case "street":
-                updateScreen.street =    listStreet[indexPath.row].name
+
+                UserDefaults.standard.set( listStreet[indexPath.row].name , forKey: "street")
             default:
-                updateScreen.district =  listDistrict[indexPath.row].name
+                UserDefaults.standard.set( listDistrict[indexPath.row].name , forKey: "district")
             }
 
+        dismiss(animated: true, completion: nil)
         
         }
      
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-       
+        switch control {
+        case "ward":
+            filterWard = []
+        case "street":
+            filterStreet = []
+        default:
+            filterDistrict = []
+        }
          
         
         if searchText == "" {

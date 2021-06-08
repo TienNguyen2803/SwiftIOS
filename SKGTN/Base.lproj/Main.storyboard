@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kk6-fH-M3M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TkR-tp-zdS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -1235,7 +1235,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dc0-KU-eKM">
-                                <rect key="frame" x="0.0" y="645" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="645" width="414" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Địa chỉ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QR-qq-s6U">
                                         <rect key="frame" x="20" y="20" width="53.5" height="21"/>
@@ -1243,14 +1243,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80 Quang Trung , Gò Vấp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rd7-fK-ucI" userLabel="address">
-                                        <rect key="frame" x="20" y="61" width="203" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80 Quang Trung , Gò Vấp" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rd7-fK-ucI" userLabel="address">
+                                        <rect key="frame" x="20" y="61" width="230" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="2fp-LC-jmR"/>
+                                            <constraint firstAttribute="height" constant="60" id="qis-Z7-agG"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4P-HZ-1cr">
-                                        <rect key="frame" x="325" y="35" width="69" height="30"/>
+                                        <rect key="frame" x="325" y="75" width="69" height="30"/>
                                         <state key="normal" title="Chỉnh sửa">
                                             <color key="titleColor" systemColor="systemOrangeColor"/>
                                         </state>
@@ -1263,7 +1267,7 @@
                                 <constraints>
                                     <constraint firstItem="o4P-HZ-1cr" firstAttribute="centerY" secondItem="dc0-KU-eKM" secondAttribute="centerY" id="3hB-tS-3H3"/>
                                     <constraint firstAttribute="trailing" secondItem="o4P-HZ-1cr" secondAttribute="trailing" constant="20" id="CyU-Kh-cBb"/>
-                                    <constraint firstAttribute="height" constant="100" id="Jir-3z-fth"/>
+                                    <constraint firstAttribute="height" constant="180" id="Jir-3z-fth"/>
                                     <constraint firstItem="3QR-qq-s6U" firstAttribute="top" secondItem="dc0-KU-eKM" secondAttribute="top" constant="20" id="dnq-5K-Rfo"/>
                                     <constraint firstItem="Rd7-fK-ucI" firstAttribute="top" secondItem="3QR-qq-s6U" secondAttribute="bottom" constant="20" id="e0Y-It-55O"/>
                                     <constraint firstItem="Rd7-fK-ucI" firstAttribute="leading" secondItem="dc0-KU-eKM" secondAttribute="leading" constant="20" id="mtC-Sg-eei"/>
@@ -1677,8 +1681,8 @@
                                 <rect key="frame" x="30" y="258" width="331" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chọn Tỉnh / Thành Phố" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9l-rN-xyA">
-                                        <rect key="frame" x="5" y="14.5" width="174" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="5" y="14.5" width="176.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1716,8 +1720,8 @@
                                 <rect key="frame" x="30" y="323" width="331" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chọn Quận / Huyện" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="od9-4F-top">
-                                        <rect key="frame" x="5" y="14.5" width="148" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="5" y="14.5" width="151" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1755,8 +1759,8 @@
                                 <rect key="frame" x="30" y="388" width="331" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chọn Phường / Xã" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grU-k6-Ovs">
-                                        <rect key="frame" x="5" y="14.5" width="137.5" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="5" y="14.5" width="140" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1796,7 +1800,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="xwO-Jv-N8G"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udZ-6U-Ovd">
@@ -1842,14 +1846,17 @@
                     </view>
                     <connections>
                         <outlet property="btnSubmit" destination="udZ-6U-Ovd" id="rae-YE-pht"/>
+                        <outlet property="district" destination="h9l-rN-xyA" id="r95-8q-62X"/>
                         <outlet property="labelCrurrent" destination="EAI-Wl-Vqh" id="CQt-if-hbI"/>
                         <outlet property="labelNew" destination="nts-2W-WSR" id="UbB-MH-Cbl"/>
                         <outlet property="nameCurrent" destination="Gdh-1u-N51" id="yUp-Tn-u40"/>
+                        <outlet property="street" destination="grU-k6-Ovs" id="4xu-QD-ob9"/>
                         <outlet property="textFieldInput" destination="hqW-Zs-fda" id="Ht0-EO-CGi"/>
                         <outlet property="titleUpdate" destination="D49-a9-sqM" id="zLS-TW-0Sx"/>
                         <outlet property="viewDistrict" destination="YUf-oJ-3kf" id="aGj-Bc-AOn"/>
                         <outlet property="viewStreet" destination="AvD-Mz-1PT" id="EDx-Aj-s9Q"/>
                         <outlet property="viewWard" destination="Aub-Xp-KGu" id="sTH-Yr-y8G"/>
+                        <outlet property="ward" destination="od9-4F-top" id="ZxK-Ob-W9e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K1Y-c0-eeJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
