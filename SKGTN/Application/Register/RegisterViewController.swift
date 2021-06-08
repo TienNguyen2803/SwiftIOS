@@ -9,6 +9,18 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var phone: UITextField!
+    @IBOutlet weak var email: UITextField!
+    
+   
+    
+    @IBOutlet weak var error: UILabel!
+    @IBOutlet weak var repassword: UITextField!
+    
+    
     @IBOutlet weak var btnRegister: UIButton!
     @IBOutlet weak var img_logo: UIImageView!
     override func viewDidLoad() {
@@ -23,14 +35,18 @@ class RegisterViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
-     /*
-    // MARK: - Navigation
+     
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func handleSubmit(_ sender: Any) {
+        if email.text != "" && password.text != "" && phone.text != ""  {
+            if repassword.text != "" && repassword.text == password.text {
+                UserDefaults.standard.setValue(email.text, forKey: "email")
+                UserDefaults.standard.setValue(password.text, forKey: "password")
+                self.navigationController?.popViewController(animated: true)
+            }
+            
+        }else{
+            error.text = "Vui lòng nhập đầy đủ thông tin"
+        }
     }
-    */
-
 }

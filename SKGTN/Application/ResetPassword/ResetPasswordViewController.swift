@@ -11,6 +11,7 @@ class ResetPasswordViewController: UIViewController {
     var tabViewControllers: [UIViewController]!
     @IBOutlet weak var btn_submit: UIButton!
     @IBOutlet weak var img_logo: UIImageView!
+    @IBOutlet weak var password: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         img_logo.image = UIImage(named: "logo_otp")
@@ -20,8 +21,8 @@ class ResetPasswordViewController: UIViewController {
     }
     
     @IBAction func handleSubmit(_ sender: Any) {
-        self.tabBarController?.selectedIndex = 1
-       
+        
+        UserDefaults.standard.set(password.text, forKey: "password")
         
         self.navigationController?.popToRootViewController(animated: true)
     }

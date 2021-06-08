@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F25BF9EE266F6F7700A945D5 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25BF9ED266F6F7700A945D5 /* ContactViewController.swift */; };
 		F2AD94E82669D389000FD632 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD94E72669D389000FD632 /* WalletViewController.swift */; };
 		F2AD94ED2669D3A2000FD632 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD94EC2669D3A2000FD632 /* NotificationViewController.swift */; };
 		F2AD94F22669D3B6000FD632 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD94F12669D3B6000FD632 /* HomeViewController.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F25BF9ED266F6F7700A945D5 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		F2AD94E72669D389000FD632 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		F2AD94EC2669D3A2000FD632 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		F2AD94F12669D3B6000FD632 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F25BF9EC266F6F6100A945D5 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				F25BF9ED266F6F7700A945D5 /* ContactViewController.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
 		F2AD94D82669D311000FD632 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +231,7 @@
 		F2AE75CC2669209200D387AD /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				F25BF9EC266F6F6100A945D5 /* Contact */,
 				F2FE07BA266D05E8007C970E /* ChangePassword */,
 				F2FE07A9266CFAD2007C970E /* Profile */,
 				F2FE0788266BAC3E007C970E /* Setting */,
@@ -499,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2AE759A26691E7100D387AD /* ViewController.swift in Sources */,
+				F25BF9EE266F6F7700A945D5 /* ContactViewController.swift in Sources */,
 				F2FE07DA266E575A007C970E /* Ward.swift in Sources */,
 				F2AE75A026691E7100D387AD /* SKGTN.xcdatamodeld in Sources */,
 				F2FE079A266CE5F6007C970E /* SettingsTableViewCell.swift in Sources */,

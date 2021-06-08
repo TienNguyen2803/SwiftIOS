@@ -18,9 +18,9 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
         Setting( name : "Chương trình của bạn" ,  icon: "star.slash.fill", path :"PROFILE")
     ]
     var commonArray : [Setting] = [
-        Setting( name :  "Những câu hỏi thường gặp", icon: "questionmark.circle.fill", path :"PROFILE" ),
-        Setting( name : "Liên hệ hỗ trợ", icon: "exclamationmark.circle.fill", path :"PROFILE" ),
-        Setting( name :  "Điều khoản và chính sách", icon: "doc.text.fill", path :"PROFILE" )
+        Setting( name :  "Những câu hỏi thường gặp", icon: "questionmark.circle.fill", path :"CONTACT" ),
+        Setting( name : "Liên hệ hỗ trợ", icon: "exclamationmark.circle.fill", path :"CONTACT" ),
+        Setting( name :  "Điều khoản và chính sách", icon: "doc.text.fill", path :"CONTACT" )
     ]
     
     
@@ -96,23 +96,41 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let route : String = personArray[indexPath.row]
-            .path
+         
         let sb = UIStoryboard(name: "Main", bundle: nil)
         
-        var screen = sb.instantiateViewController(withIdentifier: route)
-        //Convert screen to view controller
-        switch route {
-        case "CHANGEPASSWORD":
-            screen = screen as! ChangePasswordViewController
-        default:
-            screen =  screen as! ProfileViewController
+        if tableView.tag ==  0 {
+            let route : String = personArray[indexPath.row]
+                .path
+            var screen = sb.instantiateViewController(withIdentifier: route)
+            //Convert screen to view controller
+            switch route {
+            case "CHANGEPASSWORD":
+                screen = screen as! ChangePasswordViewController
+            default:
+                screen =  screen as! ProfileViewController
+            }
+
+
+            self.navigationController?.pushViewController(screen, animated: true)
+        }else{
+            let route : String = commonArray[indexPath.row]
+                .path
+            var screen = sb.instantiateViewController(withIdentifier: route)
+            //Convert screen to view controller
+            switch route {
+            case "CHANGEPASSWORD":
+                screen = screen as! ChangePasswordViewController
+            default:
+                screen =  screen as! ProfileViewController
+            }
+
+
+            self.navigationController?.pushViewController(screen, animated: true)
         }
         
-         
-        self.navigationController?.pushViewController(screen, animated: true)
-        
-        
+
+       
     }
     
   

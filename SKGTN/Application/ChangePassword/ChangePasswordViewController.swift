@@ -11,6 +11,7 @@ class ChangePasswordViewController: UIViewController {
 
     @IBOutlet weak var imgLogo: UIImageView!
     @IBOutlet weak var btnSubmit: UIButton!
+    @IBOutlet weak var newPassword: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
@@ -22,7 +23,7 @@ class ChangePasswordViewController: UIViewController {
     
 
     @IBAction func handleSubmit(_ sender: Any) {
-    
+        UserDefaults.standard.set(newPassword.text, forKey: "password")
         self.navigationController?.popToRootViewController(animated: true)
     }
     /*
