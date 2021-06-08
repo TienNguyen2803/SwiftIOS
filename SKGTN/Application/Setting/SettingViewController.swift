@@ -50,6 +50,9 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
   
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
    
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         view.tintColor = UIColor.red
@@ -114,6 +117,14 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
     
   
     
+    @IBAction func handleLogout(_ sender: Any) {
+        let screen = UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(withIdentifier: "LOGIN")
+        as! LoginViewController
+        screen.modalPresentationStyle = .fullScreen
+        self.present(screen, animated: true, completion: nil)
+        
+    }
     
 
 }

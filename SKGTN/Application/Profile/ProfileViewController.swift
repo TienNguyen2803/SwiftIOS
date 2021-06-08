@@ -45,7 +45,7 @@ class ProfileViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         //  self.view.layer.backgroundColor = UIColor(red: 0.91, green: 0.448, blue: 0.338, alpha: 1).cgColor
-       
+        self.tabBarController?.tabBar.isHidden = true
         //set border corlor
         view1.layer.borderWidth = 2
         view1.layer.borderColor = UIColor.black.cgColor

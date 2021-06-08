@@ -554,6 +554,9 @@
                                     <constraint firstAttribute="height" constant="25" id="Qsf-fp-qf0"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="icon_logout"/>
+                                <connections>
+                                    <action selector="handleLogout:" destination="Ny7-d4-Wg1" eventType="touchUpInside" id="2nA-wI-IgF"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pqw-Zv-gi4">
                                 <rect key="frame" x="0.0" y="253" width="414" height="350"/>
