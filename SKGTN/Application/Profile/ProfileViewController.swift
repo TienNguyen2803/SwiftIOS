@@ -59,7 +59,7 @@ class ProfileViewController: UIViewController  {
         view5.layer.borderColor = UIColor.black.cgColor
         view6.layer.borderWidth = 2
         view6.layer.borderColor = UIColor.black.cgColor
-    
+        self.view.backgroundColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
        
     }
      

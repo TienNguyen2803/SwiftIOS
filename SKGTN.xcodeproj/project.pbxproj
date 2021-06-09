@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F25BF9EE266F6F7700A945D5 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25BF9ED266F6F7700A945D5 /* ContactViewController.swift */; };
+		F25BF9FA266FA27800A945D5 /* PolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25BF9F9266FA27800A945D5 /* PolicyViewController.swift */; };
+		F25BF9FF266FA8F000A945D5 /* policy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F25BF9FE266FA8F000A945D5 /* policy.pdf */; };
+		F25BFA05266FC49100A945D5 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25BFA04266FC49100A945D5 /* FAQViewController.swift */; };
+		F25BFA0D2670771800A945D5 /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25BFA0C2670771800A945D5 /* FAQTableViewCell.swift */; };
+		F25BFA162670C62B00A945D5 /* FAQ.json in Resources */ = {isa = PBXBuildFile; fileRef = F25BFA152670C62B00A945D5 /* FAQ.json */; };
+		F25BFA1B2670C7B800A945D5 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25BFA1A2670C7B800A945D5 /* FAQ.swift */; };
 		F2AD94E82669D389000FD632 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD94E72669D389000FD632 /* WalletViewController.swift */; };
 		F2AD94ED2669D3A2000FD632 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD94EC2669D3A2000FD632 /* NotificationViewController.swift */; };
 		F2AD94F22669D3B6000FD632 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD94F12669D3B6000FD632 /* HomeViewController.swift */; };
@@ -61,6 +67,12 @@
 
 /* Begin PBXFileReference section */
 		F25BF9ED266F6F7700A945D5 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		F25BF9F9266FA27800A945D5 /* PolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyViewController.swift; sourceTree = "<group>"; };
+		F25BF9FE266FA8F000A945D5 /* policy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = policy.pdf; sourceTree = "<group>"; };
+		F25BFA04266FC49100A945D5 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		F25BFA0C2670771800A945D5 /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
+		F25BFA152670C62B00A945D5 /* FAQ.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = FAQ.json; path = ../../../../../FAQ.json; sourceTree = "<group>"; };
+		F25BFA1A2670C7B800A945D5 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
 		F2AD94E72669D389000FD632 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		F2AD94EC2669D3A2000FD632 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		F2AD94F12669D3B6000FD632 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +144,32 @@
 				F25BF9ED266F6F7700A945D5 /* ContactViewController.swift */,
 			);
 			path = Contact;
+			sourceTree = "<group>";
+		};
+		F25BF9F5266FA24D00A945D5 /* Policy */ = {
+			isa = PBXGroup;
+			children = (
+				F25BF9F9266FA27800A945D5 /* PolicyViewController.swift */,
+			);
+			path = Policy;
+			sourceTree = "<group>";
+		};
+		F25BFA03266FC45B00A945D5 /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				F25BFA04266FC49100A945D5 /* FAQViewController.swift */,
+				F25BFA0C2670771800A945D5 /* FAQTableViewCell.swift */,
+				F25BFA1A2670C7B800A945D5 /* FAQ.swift */,
+			);
+			path = FAQ;
+			sourceTree = "<group>";
+		};
+		F25BFA112670C59800A945D5 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				F25BFA152670C62B00A945D5 /* FAQ.json */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 		F2AD94D82669D311000FD632 /* Wallet */ = {
@@ -231,6 +269,8 @@
 		F2AE75CC2669209200D387AD /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				F25BFA03266FC45B00A945D5 /* FAQ */,
+				F25BF9F5266FA24D00A945D5 /* Policy */,
 				F25BF9EC266F6F6100A945D5 /* Contact */,
 				F2FE07BA266D05E8007C970E /* ChangePassword */,
 				F2FE07A9266CFAD2007C970E /* Profile */,
@@ -254,6 +294,7 @@
 		F2AE75CD266920A500D387AD /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F25BFA112670C59800A945D5 /* Json */,
 				F2AE75D0266920C800D387AD /* Videos */,
 				F2AE75CF266920C100D387AD /* Sounds */,
 				F2AE75CE266920B800D387AD /* Images */,
@@ -264,6 +305,7 @@
 		F2AE75CE266920B800D387AD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F25BF9FE266FA8F000A945D5 /* policy.pdf */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -484,7 +526,9 @@
 			files = (
 				F2AE75A526691E7400D387AD /* LaunchScreen.storyboard in Resources */,
 				F2AE75A226691E7400D387AD /* Assets.xcassets in Resources */,
+				F25BF9FF266FA8F000A945D5 /* policy.pdf in Resources */,
 				F2AE759D26691E7100D387AD /* Main.storyboard in Resources */,
+				F25BFA162670C62B00A945D5 /* FAQ.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,12 +555,15 @@
 			files = (
 				F2AE759A26691E7100D387AD /* ViewController.swift in Sources */,
 				F25BF9EE266F6F7700A945D5 /* ContactViewController.swift in Sources */,
+				F25BFA0D2670771800A945D5 /* FAQTableViewCell.swift in Sources */,
 				F2FE07DA266E575A007C970E /* Ward.swift in Sources */,
+				F25BFA05266FC49100A945D5 /* FAQViewController.swift in Sources */,
 				F2AE75A026691E7100D387AD /* SKGTN.xcdatamodeld in Sources */,
 				F2FE079A266CE5F6007C970E /* SettingsTableViewCell.swift in Sources */,
 				F2FE07C6266D3A04007C970E /* UpdateProfileViewController.swift in Sources */,
 				F2AE759626691E7100D387AD /* AppDelegate.swift in Sources */,
 				F2FE078D266BAC68007C970E /* SettingViewController.swift in Sources */,
+				F25BF9FA266FA27800A945D5 /* PolicyViewController.swift in Sources */,
 				F2FE076F266A5956007C970E /* RegisterViewController.swift in Sources */,
 				F2AE75D62669213300D387AD /* User.swift in Sources */,
 				F2FE07CB266E0688007C970E /* UpdateAddressViewController.swift in Sources */,
@@ -534,6 +581,7 @@
 				F2FE0778266A9489007C970E /* ForgotPasswordViewController.swift in Sources */,
 				F2AE75DE266921A000D387AD /* Auth.swift in Sources */,
 				F2FE07D5266E5722007C970E /* District.swift in Sources */,
+				F25BFA1B2670C7B800A945D5 /* FAQ.swift in Sources */,
 				F2FE0784266B3403007C970E /* ResetPasswordViewController.swift in Sources */,
 				F2FE077E266B258C007C970E /* OTPViewController.swift in Sources */,
 				F2FE0766266A339C007C970E /* LoginViewController.swift in Sources */,

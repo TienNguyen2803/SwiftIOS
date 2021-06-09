@@ -18,9 +18,9 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
         Setting( name : "Chương trình của bạn" ,  icon: "star.slash.fill", path :"PROFILE")
     ]
     var commonArray : [Setting] = [
-        Setting( name :  "Những câu hỏi thường gặp", icon: "questionmark.circle.fill", path :"CONTACT" ),
+        Setting( name :  "Những câu hỏi thường gặp", icon: "questionmark.circle.fill", path :"FAQ" ),
         Setting( name : "Liên hệ hỗ trợ", icon: "exclamationmark.circle.fill", path :"CONTACT" ),
-        Setting( name :  "Điều khoản và chính sách", icon: "doc.text.fill", path :"CONTACT" )
+        Setting( name :  "Điều khoản và chính sách", icon: "doc.text.fill", path :"POLICY" )
     ]
     
     
@@ -46,6 +46,7 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
         //set img for avatar
         img_avatar.image = UIImage(named: "user")
         img_avatar.layer.cornerRadius = 65
+        self.view.backgroundColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
        
   
         
@@ -116,17 +117,26 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
         }else{
             let route : String = commonArray[indexPath.row]
                 .path
-            var screen = sb.instantiateViewController(withIdentifier: route)
+            
             //Convert screen to view controller
             switch route {
-            case "CHANGEPASSWORD":
-                screen = screen as! ChangePasswordViewController
+            case "CONTACT":
+                let screen = sb.instantiateViewController(withIdentifier: route) as! ContactViewController
+                self.navigationController?.pushViewController(screen, animated: true)
+                 
+            case "FAQ":
+                let screen = sb.instantiateViewController(withIdentifier: route) as! FAQViewController
+                let FAQ =  loadJson(fileName: "FAQ")!
+           
+                self.navigationController?.pushViewController(screen, animated: true)
+              
             default:
-                screen =  screen as! ProfileViewController
+                let screen = sb.instantiateViewController(withIdentifier: route) as! PolicyViewController
+                self.navigationController?.pushViewController(screen, animated: true)
             }
 
 
-            self.navigationController?.pushViewController(screen, animated: true)
+             
         }
         
 
@@ -143,6 +153,19 @@ class SettingViewController: UIViewController, UITableViewDataSource, UITableVie
         self.present(screen, animated: true, completion: nil)
         
     }
-    
+    func loadJson(fileName: String) -> FAQ? {
+        guard let sourceURL = Bundle.main.url(forResource: fileName, withExtension: "json") else {
+            fatalError("error")
+        }
+        guard let listData = try? Data(contentsOf: sourceURL) else {
+            fatalError("error")
+        }
+        let decoder = JSONDecoder()
+        guard let listFAQ = try? decoder.decode(FAQ.self, from: listData) else {
+            fatalError("error")
+        }
+
+       return listFAQ
+    }
 
 }
